@@ -70,6 +70,17 @@ h3 {
 .divider > section:last-of-type {
   border-bottom: none;
 }
+.btn {
+  color: #1d2326;
+  background: #ff7647;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 4px;
+  display: inline-block;
+}
+.btn:hover {
+  background: rgba(255, 118, 71, .8);
+}
 
 
 /* Profile
@@ -82,25 +93,24 @@ header a {
   color: #1d2326;
 }
 
+header .btn {
+  background: #1d2326;
+  color: #f9fafb;
+  padding: 12px;
+}
+
+header .btn:hover {
+  background: rgba(29, 35, 38, .8);
+}
+
+header h1 + .btn {
+  margin-top: 1rem;
+}
 
 /* Projects
 ------------------------------------*/
 .projects {
   background: #f9fafb;
-}
-.projects a {
-  color: #ff7647;
-}
-.projects .btn {
-  color: #1d2326;
-  background: #ff7647;
-  text-decoration: none;
-  padding: 8px;
-  border-radius: 4px;
-  display: inline-block;
-}
-.projects .btn:hover {
-  background: rgba(255, 118, 71, 80%);
 }
 .project-item {
   overflow: hidden;
@@ -108,14 +118,6 @@ header a {
 .project-item h3 {
   margin-top: 0;
 }
-
-
-/* Work Experience
-------------------------------------*/
-.work-experience {
-  background: #d8dee1;
-}
-
 
 
 /* Education
