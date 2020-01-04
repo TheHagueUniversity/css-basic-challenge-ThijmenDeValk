@@ -88,21 +88,17 @@ h3 {
 header {
   background: #ff7647;
 }
-
 header a {
   color: #1d2326;
 }
-
 header .btn {
   background: #1d2326;
   color: #f9fafb;
   padding: 12px;
 }
-
 header .btn:hover {
   background: rgba(29, 35, 38, .8);
 }
-
 header h1 + .btn {
   margin-top: 1rem;
 }
@@ -119,6 +115,51 @@ header h1 + .btn {
   margin-top: 0;
 }
 
+
+/* Travel diary
+------------------------------------*/
+.travel {
+  background: #1d2326;
+  color: #f9fafb;
+}
+
+.travel-collection {
+  display: flex;
+  flex-flow: row wrap;
+}
+.travel-collection figure {
+  display: block;
+  margin: 0;
+  flex: 33.3%;
+}
+.travel-collection a {
+  display: block;
+  margin: .5rem;
+  position: relative;
+}
+.travel-collection a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 2;
+  left: 10px;
+  right: 10px;
+  top: 10px;
+  bottom: 10px;
+  border-radius: 2px;
+  background: rgba(29, 35, 38, .5) url('../images/magnify.svg') no-repeat center center;
+  background-size: 50px auto;
+  opacity: 0;
+  transition: opacity .2s;
+}
+.travel-collection a:hover:after {
+  opacity: .5;
+}
+.travel-collection img {
+  width: 100%;
+  display: block;
+  border-radius: 6px;
+}
 
 /* Education
 ------------------------------------*/
